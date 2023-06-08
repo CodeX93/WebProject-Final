@@ -1,0 +1,67 @@
+#Navbar {
+    padding: 16px;
+  }
+  
+  #Navbar img {
+    height: 50px;
+    width: 50px;
+justify-content: space-around;
+  }
+  
+  #NavBarToggle {
+    /* Add your styles for the toggle button */
+  }
+  
+  #Navbar .ml-auto {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-items: end;
+    
+  }
+  
+  #NavLink {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    text-align: center;
+    justify-items: end;
+    justify-content: space-around;
+    text-decoration: none;
+  }
+  
+  #NavLink .svg-inline--fa {
+    width: auto;
+    height: 25px;
+    margin-right: 5px;
+    
+  }
+  
+  #NavLink span {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 991.98px) {
+    #Navbar img {
+      margin-right: 0;
+    }
+    #NavLink span {
+        padding-left: 16px;
+    }
+  
+  
+  
+    #NavLink {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #Navbar .ml-auto {
+      flex-direction: row;
+    }
+  }
+  

@@ -1,0 +1,30 @@
+version: "3"
+services:
+  
+  ui:
+   build:
+      context: ./frontend
+      dockerfile: Dockerfile
+   ports:
+    -  3000:3000
+   container_name: mern-ui
+   networks:
+    -  mern-stack-net
+   depends_on:
+    - api
+   stdin_open: true
+   tty: true
+
+  api:
+   build:
+      context: ./backend
+      dockerfile: Dockerfile
+   ports:
+     - 3005:3005
+   container_name: mern-api
+   networks:
+     - mern-stack-net
+
+networks:
+  mern-stack-net:
+    driver: bridge

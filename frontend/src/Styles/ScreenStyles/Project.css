@@ -1,0 +1,77 @@
+.UploadSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Project {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 24px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns with equal width */
+    grid-gap: 10px; /* Gap between grid items */
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the grid */
+    padding: 20px;
+    align-items: center;
+      justify-content: center;
+     
+    }
+    .grid-container Button{
+      margin-left: 16px;
+        
+      
+    }
+    
+  
+  .grid-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  /* Media query for large screens */
+  @media (max-width: 1200px) {
+    .grid-container {
+      max-width: 900px;
+      align-items: center;
+      justify-content: center;
+    }
+    Button{
+        margin-left: 8px;
+    
+    }
+  }
+  
+  /* Media query for medium screens */
+  @media (max-width: 992px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+      max-width: 600px;
+      align-items: center;
+      justify-content: center;
+    }
+    Button{
+        margin-left: 8px;
+    }
+    
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 576px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 column with full width */
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    Button{
+        margin-left: 8px;
+    }
+  }
+  
